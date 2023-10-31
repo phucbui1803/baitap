@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+    <h1 id="1"></h1>
+    <h2 id="2"></h2>
+    <h3 id="3"></h3>
     <script>
-        let arr = [];
-        let soLuong = +prompt("nhập vào số lượng phần tử: ");
-        for (let i = 0; i < soLuong; i++) {
-            let pt = +prompt("nhập vào phần tử thứ: " + i);
-            arr.push(pt);
+        let a = +prompt("nhap so a: ");
+        let b = +prompt("nhap so b: ");
+        let tong = 0;
+        let tich = 1;
+        for(var i = a; i <= b; i++) {
+            tong += i;
+            tich *= i;
         }
+        document.write("tong la: " + tong + "<br>");
+        document.write("tich la: " + tich);
 
-        let max = arr[0];
-        let sum = 0;
-        let dem = 0;
-        for (let i = 0; i < arr.length; i++) {
-            sum += arr[i];
-            dem++;
-        }
-        document.write("giá trị tổng: " + sum + "<br>");
-        document.write("giá trị trung bình: " + (sum / dem) + "<br>");
     </script>
 </body>
-
 </html>

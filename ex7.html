@@ -2,22 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        let arr = [1,2,3,4,5,6,7,8,9];
-        let V = +prompt("nhập vào V: ");
-        let viTri = -1;
-        for (let i=0; i<arr.length;i++) {
-            if(arr[i] == V) {
-                viTri = i;
+        document.write("Bùi Đức Minh Phúc" + "<br>");
+        let a = +prompt("nhập a");
+        let b = +prompt("nhập b");
+        let c = +prompt("nhập c");
+        if((a + b > c) && (b + c > a) && (a + c > b)) {
+            document.write("a,b,c là 3 cạnh của tam giác" + "<br>")
+            if((a == b) || (a == c) || (b == c)) {
+                document.write("a,b,c là 3 cạnh của tam giác cân" + "<br>")
+            } else {
+                document.write("a,b,c không phải là 3 cạnh của tam giác cân" + "<br>")
             }
+            if((a == b) && (a == c) && (b == c)) {
+                document.write("a,b,c là 3 cạnh của tam giác đều" + "<br>")
+            } else {
+                document.write("a,b,c không phải là 3 cạnh của tam giác đều" + "<br>")
+            }
+            if((a**2 + b**2 == c**2) || (a**2 + c**2 == b**2) || (b**2 + c**2 == a**2)) {
+                document.write("a,b,c là 3 cạnh của tam giác vuông" + "<br>")
+            } else {
+                document.write("a,b,c không phải là 3 cạnh tam giác vuông" + "<br>")
+            }
+        } else {
+            document.write("a,b,c không phải là 3 cạnh của tam giác")
         }
-        arr.splice(viTri, 1);
-        arr.push(0);
-        document.write(arr);
     </script>
 </body>
 </html>

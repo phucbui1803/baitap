@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("Bùi Đức Minh Phúc" + "<br>");
+        let mang1 = [43, 55, 2, 7, 11, 84];
+        let min1 = mang1[0];
+        for (let i = 0; i < mang1.length; i++) {
+            if (min1 > mang1[i]) {
+                min1 = mang1[i];
+            }
+        }
+        document.write(mang1 + "<br>");
+        document.write("giá trị nhỏ nhất: " + min1 + "<br>");
+        let mang2 = [12, 4, 60, 33, 57, 882, 19];
+        let min2 = mang2[0];
+        let viTriCuaMin2 = -1;
+        for (let i = 0; i < mang1.length; i++) {
+            if (min2 > mang2[i]) {
+                min2 = mang2[i];
+                viTriCuaMin2 = i;
+            }
+        }
+        document.write(mang2 + "<br>");
+        document.write("giá trị nhỏ nhất: " + min2 + "<br>");
+        document.write("vị trí: " + viTriCuaMin2 + "<br>");
+    </script>
+</body>
+
+</html>

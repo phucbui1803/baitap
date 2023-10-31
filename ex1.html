@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-        let arr = [];
-        let soLuong = +prompt("nhập vào số lượng phần tử: ");
-        for (let i = 0; i < soLuong; i++) {
-            let pt = +prompt("nhập vào phần tử thứ: " + i);
-            arr.push(pt);
+        let x = +prompt("nhap so x: ");
+        for (var i = 1; i <= x; i++){
+            document.write("hello ");
         }
-
-        let dem = 0;
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] >= 10) {
-                dem++;
-            }
+        let a = +prompt("nhap so a: ");
+        let b = +prompt("nhap so b: ");
+        for (var i = a; i <= b; i++){
+            document.write(i + " ");
         }
-        document.write("có" + dem + "số lớn hơn hoặc bằng 10")
     </script>
+    
 </body>
-
 </html>

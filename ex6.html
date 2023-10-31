@@ -7,20 +7,19 @@
 </head>
 <body>
     <script>
-        let arr = [];
-        let soLuong = +prompt("nhập vào số lượng phần tử: ");
-        for (let i = 0; i < soLuong; i++) {
-            let pt = +prompt("nhập vào phần tử thứ: " + i);
-            arr.push(pt);
+        let a = +prompt();
+        let b = +prompt();
+        let tong = 0;
+        let so = 0;
+        let tbc = 0;
+        for (let i = a; i <= b; i++) {
+            tong += i;
+            so++;
         }
-
-        for (let i = 0; i < arr.length; i++) {
-            if (x == mang[i]) {
-                document.write(x + "in the array");
-            } else {
-                document.write(x + "not in the array");
-            }
-        }
+        document.write("tong = " + tong + "<br>");
+        document.write("so = " + so + "<br>");
+        document.write("trung binh cong = " + tong/so + "<br>");
+        document.write("Bùi Đức Minh Phúc");
     </script>
 </body>
 </html>

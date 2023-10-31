@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Username: <input type="text" id="username">
+        <br>
+        <br>
+        Pass: <input type="text" id="pass"> 
+        <br>
+        <br>
+        <button onclick="check()">Đăng nhập</button>
+        <br>
+        <br>
+        <h1 id="me"></h1>
+        <script>
+            function check() {
+                let Username = document.getElementById('username').value;
+                let Pass = document.getElementById('pass').value;
+                if(Username == "admin" && Pass == "123") {
+                    document.getElementById("me").innerText = "Bùi Đức Minh Phúc";
+                } else {
+                    document.getElementById("me").innerText = "Sai tên hoặc mật khẩu";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
+</body>
+</html>
