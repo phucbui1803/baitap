@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .out {
-            width: 200px;
-            height: 200px;
-            border: 1px solid;
-        }
-        .box1 {
-            width: 200px;
-            height: 200px;
-            background: blue;
-            transition: 4s;
-        }
-        .out:hover .box1 {
-            border-radius: 200px 200px 200px 200px;
-            background: red;
-            margin-left: 300px;
-            border: 5px yellow dashed;
-        }
-    </style>
 </head>
+
 <body>
-    <div class="out">
-        <div class="box1"></div>
-    </div>
+    <script>
+        let arr = [];
+        let soLuong = +prompt("nhập vào số lượng phần tử: ");
+        for (let i = 0; i < soLuong; i++) {
+            let pt = +prompt("nhập vào phần tử thứ: " + i);
+            arr.push(pt);
+        }
+
+        let dem = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                dem++;
+            }
+        }
+        document.write("có" + dem + "số lớn hơn hoặc bằng 10")
+    </script>
 </body>
+
 </html>

@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .out {
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-            overflow: hidden;
-            background: black;
-        }
-        .box {
-            width: 200px;
-            height: 200px;
-            transition: 0.5s;
-            margin-top: 200px;
-            text-align: center;
-        }
-        .out:hover .box {
-            margin-top: 100px;
-        }
-    </style>
 </head>
 <body>
-    <div class="out">
-        <div class="box" style="color: white;">hello my friend</div>
-    </div>
+    <script>
+        let arr = [];
+        let soLuong = +prompt("nhập vào số lượng phần tử: ");
+        for (let i = 0; i < soLuong; i++) {
+            let pt = +prompt("nhập vào phần tử thứ: " + i);
+            arr.push(pt);
+        }
+
+        let max = arr[0];
+        let viTri = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                viTri = i;
+            }
+        }
+        document.write("giá trị lớn nhất: " + max + "<br>");
+        document.write("vị trí: " + viTri);
+    </script>
 </body>
 </html>

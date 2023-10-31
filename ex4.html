@@ -2,51 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .box {
-            width: 100%;
-            height: 700px;
-            background: rgb(88, 100, 233);
-        }
-        .may {
-            width: 100%;
-            animation-name: may;
-            animation-duration: 2s;
-            animation-fill-mode: forwards;
-            position: absolute;
-        }
-        .mecon {
-            width: 300px;
-            margin-left: calc(90% - 300px);
-            animation-name: mecon;
-            animation-duration: 2s;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-        }
-        @keyframes may {
-            0% {
-                margin-top: -50px;
-            }
-            100% {
-                margin-top: -100px;
-            }
-        }
-        @keyframes mecon {
-            0% {
-                margin-top: -50px;
-            }
-            100% {
-                margin-top: -400px;
-            }
-        }
-    </style>
 </head>
-<body >
-    <div class="box"></div>
-    <img class="may" src="may.jpg" alt="">
-    <img class="mecon" src="mecon.jpg" alt="">
+<body>
+    <script>
+        let arr = [];
+        let soLuong = +prompt("nhập vào số lượng phần tử: ");
+        for (let i = 0; i < soLuong; i++) {
+            let pt = +prompt("nhập vào phần tử thứ: " + i);
+            arr.push(pt);
+        }
+
+        arr.reverse();
+        document.write(arr);
+    </script>
 </body>
 </html>
